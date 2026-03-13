@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busca CEP - Enviar por Email</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <h1>Buscar CEP</h1>
+        <p>Digite seu CEP e email para receber as informações</p>
+      </div>
+
+      <form class="form" >
+        <div class="form-group">
+          <label for="cep">CEP</label>
+          <div class="input-wrapper">
+            <input type="text" id="cep" name="cep" placeholder="12345-678" maxlength="9" required>
+            <span class="input-icon">📍</span>
+          </div>
+          <small class="help-text">Formato: 12345-678</small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <div class="input-wrapper">
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            <span class="input-icon">✉️</span>
+          </div>
+          <small class="help-text">Confirme seu email</small>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" placeholder="Digite uma mensagem (opcional)" rows="4"></textarea>
+          <small class="help-text">Adicione uma mensagem para enviar junto com as informações</small>
+        </div>
+
+        <button onclick="enviarDados(event)" class="btn-submit">
+          <span class="btn-text">Buscar e Enviar</span>
+          <span class="btn-arrow">→</span>
+        </button>
+      </form>
+
+      <div class="divider"></div>
+
+      <div class="info-box">
+        <h3>Como funciona?</h3>
+        <ul class="info-list">
+          <li>Insira seu CEP no formato correto</li>
+          <li>Adicione seu email</li>
+          <li>Clique em "Buscar e Enviar"</li>
+          <li>Receba as informações do endereço por email</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
