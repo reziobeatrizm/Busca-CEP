@@ -1,7 +1,7 @@
 # 🔍 Busca CEP
 
 <p align="center">
-  Sistema de busca de CEP desenvolvido com HTML, CSS e JavaScript
+  Sistema de busca de CEP desenvolvido com HTML, CSS e JavaScript, API e Formspree.
 </p>
 
 ---
